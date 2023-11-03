@@ -21,7 +21,7 @@ const showTeams = async () => {
     section.append(p);
 
     const img = document.createElement("img");
-    img.src = "http://localhost:3000/" + team.img;
+    img.src = "https://assignment13-d25u.onrender.com" + team.img;
     img.className = "image"
     section.append(img);
   });
@@ -30,7 +30,7 @@ const showTeams = async () => {
 
 const getTeams = async () => {
   try {
-    return (await fetch("http://localhost:3000/api/teams")).json();
+    return (await fetch("https://assignment13-d25u.onrender.com/api/teams")).json();
   } catch (error) {
     console.log("error retrieving JSON");
     return "";
