@@ -21,7 +21,7 @@ const showTeams = async () => {
     section.append(p);
 
     const img = document.createElement("img");
-    img.src = "https://assignment13-d25u.onrender.com" + team.img;
+    img.src = "https://assignment13-d25u.onrender.com/" + team.img;
     img.className = "image"
     section.append(img);
   });
